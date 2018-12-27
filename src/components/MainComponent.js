@@ -3,6 +3,7 @@ import Home from './HomeComponent';
 import Menu from './MenuComponent';
 import Header from './HearderComponent';
 import Footer from './FooterComponent';
+import About from './AboutusComponent';
 import {DISHES} from '../shared/dishes';
 import DishDetails from './DishDetailsComponent';
 import { COMMENTS } from '../shared/comments';
@@ -35,6 +36,15 @@ class Main extends Component {
       )
 
     }
+
+    const DishWithId = ({match}) => {
+      return(
+          <DishDetails dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+                        comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} 
+          />
+      );
+    };
+
     return (
       <div>
         <Header />
@@ -42,9 +52,11 @@ class Main extends Component {
           <Route path="/home" component={HomePage} />
           {/* for this route below you cannot use just simply compoenent because you need to pass a props
           therefore you wnat to pass a function call  */}
-          <Route path="/menu" component={() => <Menu dishes={this.state.dishes} />} /> 
+          <Route exact path="/menu" component={() => <Menu dishes={this.state.dishes} />} /> 
+          <Route exact path='/menu/:dishId' component={DishWithId} />} /> 
+          <Route exact path='/about' component={()=><About leaders={this.state.leaders}/>} />} />
           <Route exact path='/contact' component={Contact} />} />
-          <Redirect to="\home"/>
+          <Redirect to="/home"/>
         </Switch>
         <Footer />
       </div>

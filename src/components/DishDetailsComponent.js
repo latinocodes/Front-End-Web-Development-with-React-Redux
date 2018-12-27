@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 
 class DishDetails extends Component{
@@ -12,7 +13,7 @@ class DishDetails extends Component{
     }
     render(){
         if(this.props.dish != null ){
-            const comments = this.props.dish.comments.map((item) => {
+            const comments = this.props.comments.map((item) => {
                 return (
                 <div key={item.id}>
                     <h5>Author: {item.author}</h5>
@@ -24,6 +25,12 @@ class DishDetails extends Component{
             }); 
             return(
                 <div className="container">
+                    <div className="row">
+                        <Breadcrumb>
+                            <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                            <BreadcrumbItem active>{this.props.dish.name}</BreadcrumbItem>
+                        </Breadcrumb>
+                    </div>
                     <div className="row">
                         <div className="col-12 col-md-5 m-1">
                             <Card>
