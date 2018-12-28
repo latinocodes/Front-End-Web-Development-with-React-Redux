@@ -8,7 +8,7 @@ function About(props) {
         return (
             <Media key={leader.id}>
                 <Media left href="#">
-                <Media object src="https://oie.msu.edu/_assets/images/placeholder/promo-1.jpg" height="64" alt="Generic placeholder image"  className="m-2"/>
+                <Media object src="https://oie.msu.edu/_assets/images/placeholder/promo-1.jpg" height="70" alt="Generic placeholder image"  className="mr-5"/>
                 </Media>
                 <Media body>
                 <Media heading>
