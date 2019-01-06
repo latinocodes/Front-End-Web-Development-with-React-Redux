@@ -10,11 +10,11 @@ This is a collection of projects specified in the Coursera [Front-End Web Develo
 
 - [Git][5]
 - [NodeJS][6] and [NPM][7]
-- [React][8]
-- Any code/text editor ([VSCode][9]) or IDE of your choice.
+- [React][3]
+- Any code/text editor ([VSCode][8]) or IDE of your choice.
 
 ## Projects
-
+- [Checkout Other Live Projects][10]
 
 
 ## Resources
@@ -23,7 +23,7 @@ This is a collection of projects specified in the Coursera [Front-End Web Develo
 
 ## License
 
-[The MIT License (MIT)][10]
+[The MIT License (MIT)][9]
 
 ````
 Copyright (c) 2018 Jose Lara.
@@ -49,13 +49,13 @@ SOFTWARE.
 ````
 
 
-[1]: https://github.com/latinocodes/front-end-web-development-with-react/blob/master/LICENSE
+[1]: https://github.com/latinocodes/Front-End-Web-Development-with-React
 [2]: https://www.javascript.com/
 [3]: https://reactjs.org/
 [4]: https://www.coursera.org/learn/front-end-react
 [5]: https://git-scm.com/downloads
 [6]: https://nodejs.org/en/
 [7]: https://www.npmjs.com/
-[8]: https://atom.io/
+[8]: https://code.visualstudio.com/
 [9]: https://opensource.org/licenses/MIT
 [10]: https://www.joselara.me/
