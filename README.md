@@ -1,4 +1,4 @@
-# Front-End Web Development With React
+# Front-End Web Development With React and Redux
 
 [![MIT License](https://img.shields.io/badge/license-MIT%20License-green.svg)][1]
 [![JavaScript Language](https://img.shields.io/badge/language-JavaScript-F4D03F.svg)][2]
@@ -11,6 +11,7 @@ This is a collection of projects specified in the Coursera [Front-End Web Develo
 - [Git][5]
 - [NodeJS][6] and [NPM][7]
 - [React][3]
+- [Redux][11]
 - Any code/text editor ([VSCode][8]) or IDE of your choice.
 
 ## Projects
@@ -59,3 +60,4 @@ SOFTWARE.
 [8]: https://code.visualstudio.com/
 [9]: https://opensource.org/licenses/MIT
 [10]: https://www.joselara.me/
+[11]: https://redux.js.org/
