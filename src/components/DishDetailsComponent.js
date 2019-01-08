@@ -15,7 +15,7 @@ class DishDetails extends Component{
             
             name: '',
             rating: '',
-            comment: ''
+            message: ''
         }
 
         this.togglerNav = this.togglerNav.bind(this);
@@ -43,7 +43,7 @@ class DishDetails extends Component{
 
     handleSubmit(event) {
         this.toggleModal();
-        console.log(this.state);
+        this.props.addComment(this.props.dish.id, this.state.rating, this.state.name, this.state.message);
         event.preventDefault();
     }
 
@@ -52,7 +52,6 @@ class DishDetails extends Component{
             isNavOpen: !this.state.isNavOpen
         });
     }
-
 
     render(){
         if(this.props.dish != null ){
@@ -99,6 +98,7 @@ class DishDetails extends Component{
                                     <Label htmlFor="username">Rating</Label>
                                     <Col md={{size: 10}}>
                                         <Input type="select" name="rating" value={this.state.rating} onChange={this.handleInputChange}>
+                                            <option>0</option>
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
